@@ -40,7 +40,7 @@ export default function Contact() {
             <div className="grid place-items-center">
                 <Image
                     className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                    src="https://i.pinimg.com/564x/ca/c7/f6/cac7f6edc4a990bc31773f9dac53baf4.jpg"
+                    src="/google.jpg"
                     alt="Gmail"
                     width={48}
                     height={48}
@@ -52,7 +52,7 @@ export default function Contact() {
                 <Link href="https://www.linkedin.com/in/henry-leung-834888243/">
                     <Image
                         className="col-span-2 max-h-14 pt-2 w-full object-contain lg:col-span-1"
-                        src="https://img.freepik.com/premium-vector/linkedin-app-icon-world-s-largest-professional-network-social-networking-jobs-careers_277909-476.jpg"
+                        src="/linkedin.png"
                         alt="Linked-in"
                         width={48}
                         height={48}
