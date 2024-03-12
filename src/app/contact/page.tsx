@@ -51,7 +51,7 @@ export default function Contact() {
             <div className="grid place-items-center">
                 <Link href="https://www.linkedin.com/in/henry-leung-834888243/">
                     <Image
-                        className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
+                        className="col-span-2 max-h-14 pt-2 w-full object-contain lg:col-span-1"
                         src="/linkedin.png"
                         alt="Linked-in"
                         width={48}
