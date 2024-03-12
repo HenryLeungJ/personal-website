@@ -19,7 +19,7 @@ const callsToAction = [
   { name: 'Github', href: 'https://github.com/HenryLeungJ', icon: PlayCircleIcon },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
 }
 
