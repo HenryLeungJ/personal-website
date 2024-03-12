@@ -1,4 +1,4 @@
-import Me from "@/components/me.tsx"
+import Me from "@/components/me"
 
 export default function Home() {
   return (

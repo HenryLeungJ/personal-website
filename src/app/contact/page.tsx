@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import {CopyToClipboard} from "react-copy-to-clipboard";
 import {useState} from "react";
 import Link from "next/link"
+import Image from "next/image";
 
 export default function Contact() {
     const [copied, setCopied] = useState(false);
@@ -37,7 +38,7 @@ export default function Contact() {
           <p className="text-center font-semi my-4 leading-8 text-gray-900">Life is but a series of expereinces</p>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 place-content-center items-center gap-x-5 gap-y-10 sm:max-w-xl sm:grid-cols-2 sm:gap-x-5 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="grid place-items-center">
-                <img
+                <Image
                     className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
                     src="https://i.pinimg.com/564x/ca/c7/f6/cac7f6edc4a990bc31773f9dac53baf4.jpg"
                     alt="Gmail"
@@ -49,7 +50,7 @@ export default function Contact() {
             </div>
             <div className="grid place-items-center">
                 <Link href="https://www.linkedin.com/in/henry-leung-834888243/">
-                    <img
+                    <Image
                         className="col-span-2 max-h-14 pt-2 w-full object-contain lg:col-span-1"
                         src="https://img.freepik.com/premium-vector/linkedin-app-icon-world-s-largest-professional-network-social-networking-jobs-careers_277909-476.jpg"
                         alt="Linked-in"
