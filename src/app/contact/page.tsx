@@ -32,7 +32,7 @@ export default function Contact() {
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 grid place-content-center">
           <h2 className="text-center text-2xl font-semibold leading-8 text-gray-900">
-            I'm always open to new opportunities.
+            I&apos;m always open to new opportunities.
           </h2>
           <p className="text-center font-semi my-4 leading-8 text-gray-900">Life is but a series of expereinces</p>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 place-content-center items-center gap-x-5 gap-y-10 sm:max-w-xl sm:grid-cols-2 sm:gap-x-5 lg:mx-0 lg:max-w-none lg:grid-cols-2">
