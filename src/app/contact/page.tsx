@@ -1,5 +1,5 @@
 "use client"
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import {CopyToClipboard} from "react-copy-to-clipboard";
 import {useState} from "react";
 import Link from "next/link"
