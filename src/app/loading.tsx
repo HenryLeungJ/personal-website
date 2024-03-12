@@ -1,3 +1,3 @@
 export default function Loading() {
-    return <div className="flex items-center"><div className="loader"></div></div>
+    return <div className="grid place-content-center my-auto"><div className="loader"></div></div>
 }
