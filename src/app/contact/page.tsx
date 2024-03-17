@@ -35,7 +35,7 @@ export default function Contact() {
           <h2 className="text-center text-2xl font-semibold leading-8 text-gray-900">
             I&apos;m always open to new opportunities.
           </h2>
-          <p className="text-center font-semi my-4 leading-8 text-gray-900">Life is but a series of expereinces</p>
+          <p className="text-center font-semi my-4 leading-8 text-gray-900">Life is but a series of experiences</p>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 place-content-center items-center gap-x-5 gap-y-10 sm:max-w-xl sm:grid-cols-2 sm:gap-x-5 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="grid place-items-center">
                 <Image
@@ -54,8 +54,8 @@ export default function Contact() {
                         className="col-span-2 max-h-14 pt-2 w-full object-contain lg:col-span-1"
                         src="/linkedin.png"
                         alt="Linked-in"
-                        width={48}
-                        height={48}
+                        width={33}
+                        height={33}
                     />
                 </Link>
                 <Button variant="text" className="pt-2.5" onClick={async()=>{await navigator.clipboard.writeText("https://www.linkedin.com/in/henry-leung-834888243/"), handleCopied2()}}>{copied2 ? "Copied!" : "LinkedIn"}</Button>
