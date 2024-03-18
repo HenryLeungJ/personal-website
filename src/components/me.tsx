@@ -4,12 +4,12 @@ const features = [
   {
     name: 'Languages.',
     description:
-      'HTML, CSS, Javascript, Java, SQL, Python, C++',
+      'HTML, CSS, Javascript, Java, SQL, Python, C++, Motoko',
     icon: LanguageIcon,
   },
   {
     name: 'Tools & Technologies.',
-    description: 'Node, Express, PostgreSQL, MongoDB, React.js, Next.js, Git',
+    description: 'Node, Express, PostgreSQL, MongoDB, React.js, Next.js, Git, Tailwind.css, Bootstrap.css',
     icon: DevicePhoneMobileIcon,
   },
 ]
