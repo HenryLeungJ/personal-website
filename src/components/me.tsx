@@ -4,7 +4,7 @@ const features = [
   {
     name: 'Languages.',
     description:
-      'HTML, CSS, Javascript, Java, SQL, Python, C++, Motoko',
+      'HTML, CSS, Javascript, Java, SQL, Python, C++, Motoko, Typescript',
     icon: LanguageIcon,
   },
   {
