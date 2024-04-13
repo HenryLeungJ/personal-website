@@ -12,8 +12,8 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [ //add new projects here
-  { name: 'Crypto Viewer', description: `Take a look at your favourite crypto curreny's real-time price`, href: 'https://cryptoviewer-9vyu.onrender.com/', icon: CurrencyDollarIcon },
-  { name: 'Company Guesser', description: `Test your knowledge on the S&P 500's top companies`, href: 'https://companyguesser.onrender.com/', icon: BuildingOfficeIcon },
+  { name: 'Crypto Viewer', description: `Take a look at your favourite crypto curreny's real-time price`, href: 'https://cryptocurrencyviewer.vercel.app/', icon: CurrencyDollarIcon },
+  { name: 'Company Guesser', description: `Test your knowledge on the S&P 500's top companies`, href: 'https://company-guesser.vercel.app/', icon: BuildingOfficeIcon },
 ]
 const callsToAction = [
   { name: 'Github', href: 'https://github.com/HenryLeungJ', icon: PlayCircleIcon },
