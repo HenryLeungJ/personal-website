@@ -49,7 +49,7 @@ export default function Contact() {
                 
             </div>
             <div className="grid place-items-center">
-                <Link href="https://www.linkedin.com/in/henry-leung-834888243/">
+                <Link href="https://www.linkedin.com/in/henry-leung-j/">
                     <Image
                         className="col-span-2 max-h-14 pt-2 w-full object-contain lg:col-span-1"
                         src="/linkedin.png"
@@ -58,7 +58,7 @@ export default function Contact() {
                         height={33}
                     />
                 </Link>
-                <Button variant="text" className="pt-2.5" onClick={async()=>{await navigator.clipboard.writeText("https://www.linkedin.com/in/henry-leung-834888243/"), handleCopied2()}}>{copied2 ? "Copied!" : "LinkedIn"}</Button>
+                <Button variant="text" className="pt-2.5" onClick={async()=>{await navigator.clipboard.writeText("https://www.linkedin.com/in/henry-leung-j/"), handleCopied2()}}>{copied2 ? "Copied!" : "LinkedIn"}</Button>
             </div>
           </div>
         </div>
