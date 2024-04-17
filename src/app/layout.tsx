@@ -5,7 +5,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Henry Leung",
-  description: "Henry Leung's Portfolio",
+  description: "Henry Leung's Portfolio Website",
+  icons: {
+    icon: "/star.svg",
+  },
 };
 
 export default function RootLayout({

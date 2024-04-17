@@ -8,12 +8,14 @@ import {
   XMarkIcon,
   CurrencyDollarIcon,
   BuildingOfficeIcon,
+  VideoCameraIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { ChevronDownIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [ //add new projects here
-  { name: 'Crypto Viewer', description: `Take a look at your favourite crypto curreny's real-time price`, href: 'https://cryptocurrencyviewer.vercel.app/', icon: CurrencyDollarIcon },
+  { name: 'Chatting Business', description: `Schedule real-time video calls with your collegues`, href: 'https://chattingbusiness.vercel.app/', icon: VideoCameraIcon },
   { name: 'Company Guesser', description: `Test your knowledge on the S&P 500's top companies`, href: 'https://company-guesser.vercel.app/', icon: BuildingOfficeIcon },
+  { name: 'Crypto Viewer', description: `Take a look at your favourite crypto curreny's real-time price`, href: 'https://cryptocurrencyviewer.vercel.app/', icon: CurrencyDollarIcon },
 ]
 const callsToAction = [
   { name: 'Github', href: 'https://github.com/HenryLeungJ', icon: PlayCircleIcon },
