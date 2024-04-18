@@ -5,7 +5,8 @@ import { DotButton, useDotButton } from './dotbuttons'
 import useEmblaCarousel from 'embla-carousel-react'
 import './embla.css'
 import './base.css'
-
+import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 type PropType = {
   slides: number[]
@@ -16,7 +17,7 @@ const EmblaCarousel = () => {
 //   const { slides, options } = props
   const options:  EmblaOptionsType= {};
   const initialSource = '/chattingbusiness/'
-  const slides = ["home.png","setup.png", "call.png"].map((val) => {
+  const slides = ["home.png", "schedule.png", "setup.png", "call.png"].map((val) => {
     return (initialSource + val)
   }) //pictures go here
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
@@ -49,6 +50,11 @@ const EmblaCarousel = () => {
             />
           ))}
         </div>
+      </div>
+      <div className="flex justify-center mt-2">
+      <Button variant="outline" asChild>
+        <Link href="https://chattingbusiness.vercel.app/">Go To Website</Link>
+      </Button>
       </div>
     </section>
   )
