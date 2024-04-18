@@ -15,7 +15,7 @@ import { ChevronDownIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 const products = [ //add new projects here
   { name: 'Chatting Business', description: `Schedule real-time video calls with your collegues`, href: '/chattingbusiness', icon: VideoCameraIcon },
   { name: 'Company Guesser', description: `Test your knowledge on the S&P 500's top companies`, href: '/companyguesser', icon: BuildingOfficeIcon },
-  { name: 'Crypto Viewer', description: `Take a look at your favourite crypto curreny's real-time price`, href: '/cryptoviewer', icon: CurrencyDollarIcon },
+  { name: 'Crypto Viewer', description: `Take a look at your favourite cryptocurrenys' real-time price`, href: '/cryptoviewer', icon: CurrencyDollarIcon },
 ]
 const callsToAction = [
   { name: 'Github', href: 'https://github.com/HenryLeungJ', icon: PlayCircleIcon },

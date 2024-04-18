@@ -16,8 +16,8 @@ type PropType = {
 const EmblaCarousel = () => {
 //   const { slides, options } = props
   const options:  EmblaOptionsType= {};
-  const initialSource = '/chattingbusiness/'
-  const slides = ["home.png", "schedule.png", "setup.png", "call.png"].map((val) => {
+  const initialSource = '/cryptoviewer/'
+  const slides = ["home.png", "btc.png", "pepe.png", "about.png"].map((val) => {
     return (initialSource + val)
   }) //pictures go here
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
@@ -32,7 +32,7 @@ const EmblaCarousel = () => {
         <div className="embla__container">
           {slides.map((photo, index) => (
             <div className="embla__slide" key={index}>
-              <img src={photo} alt={'photos of my project'} className="rounded-xl" style={{aspectRatio: "1918/917", imageRendering: "crisp-edges", width: "90%", marginTop: "20%"}}/>
+              <img src={photo} alt={'photos of my project'} className="rounded-xl mt-12 lg:mt-32" style={{aspectRatio: "1918/917", imageRendering: "crisp-edges", width: "90%"}}/>
             </div>
           ))}
         </div>
@@ -53,7 +53,7 @@ const EmblaCarousel = () => {
       </div>
       <div className="flex justify-center mt-2">
       <Button variant="outline" asChild>
-        <Link href="https://chattingbusiness.vercel.app/">Go To Website</Link>
+        <Link href="https://cryptocurrencyviewer.vercel.app/">Go To Website</Link>
       </Button>
       </div>
     </section>

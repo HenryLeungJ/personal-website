@@ -32,7 +32,7 @@ const EmblaCarousel = () => {
         <div className="embla__container">
           {slides.map((photo, index) => (
             <div className="embla__slide" key={index}>
-              <img src={photo} alt={'photos of my project'} className="rounded-xl" style={{aspectRatio: "1918/917", imageRendering: "crisp-edges", width: "90%", marginTop: "20%"}}/>
+              <img src={photo} alt={'photos of my project'} className="rounded-xl mt-12 lg:mt-32" style={{aspectRatio: "1918/917", imageRendering: "crisp-edges", width: "90%"}}/>
             </div>
           ))}
         </div>

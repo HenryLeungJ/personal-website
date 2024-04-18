@@ -13,10 +13,10 @@ export default function chattingbusiness({
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Schedule Meetings With Ease</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Chatting Business</h1>
+              <p className="text-base font-semibold leading-7 text-indigo-600">Test Your S&P 500 Knowledge</p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Company Guesser</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-                A full stack web application to create, schedule, and record business meetings.
+                A full stack web application to determine who is the best of the best.
               </p>
             </div>
           </div>
@@ -28,15 +28,18 @@ export default function chattingbusiness({
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
-                Chatting Business utilizes <strong>Stream Video SDK</strong> and <strong>Clerk Authentication</strong> to create a seamless online video-calling experience for industry professionals. The user interface is
-                styled with <strong>ReactJS and Tailwind CSS</strong> with differing display sizes in mind. <strong>NextJs</strong> is used for routing as it provides easy-to-use server-side rendering to optimize loading times.
-                Everything was created using <strong>Typescript</strong> for superior error handling.
+                The large dataset is queried from multiple open 
+                <strong> source APIs</strong> from the server. With this data, the server manipluates the data and sends them to the clientside using <strong>RESTful APIs </strong> 
+                built with <strong>NodeJS and ExpressJS</strong>.
+                User Authentication is configured with <strong>PassportJS</strong> and secured by <strong>hashing sensitive data</strong>, then stored in a <strong>cloud-hosted PostgreSQL database</strong>. 
+                <strong> Cookies</strong> ensure the longevity
+                of users' current scores and login sessions which are stored in the users' local storage for future use.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
                   <DevicePhoneMobileIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
                   <span>
-                    <strong className="font-semibold text-gray-900">Technologies.</strong> ReactJS, Tailwind CSS, NextJS, Stream Video SDK, Clerk Authentication
+                    <strong className="font-semibold text-gray-900">Technologies.</strong> EJS, CSS, Bootstrap CSS, JavaScript, NodeJS, ExpressJS, Restful APIs, PostgreSQL, Sessions and Cookies, Bcrypt Hashing
                   </span>
                 </li>
           
