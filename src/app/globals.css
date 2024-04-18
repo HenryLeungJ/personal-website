@@ -5,9 +5,8 @@
 @import "tailwindcss/utilities";
 
 body {
-    background-color: white;
+  background-color: white;
 }
-
 
 .loader {
     width: 50px;
