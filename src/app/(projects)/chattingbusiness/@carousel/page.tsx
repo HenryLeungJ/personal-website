@@ -17,7 +17,7 @@ const EmblaCarousel = () => {
 //   const { slides, options } = props
   const options:  EmblaOptionsType= {};
   const initialSource = '/chattingbusiness/'
-  const slides = ["home.png", "schedule.png", "setup.png", "call.png"].map((val) => {
+  const slides = ["signin.png", "home.png", "schedule.png", "setup.png", "call.png"].map((val) => {
     return (initialSource + val)
   }) //pictures go here
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
