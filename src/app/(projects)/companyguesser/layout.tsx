@@ -33,7 +33,7 @@ export default function chattingbusiness({
                 built with <strong>NodeJS and ExpressJS</strong>.
                 User Authentication is configured with <strong>PassportJS</strong> and secured by <strong>hashing sensitive data</strong>, then stored in a <strong>cloud-hosted PostgreSQL database</strong>. 
                 <strong> Cookies</strong> ensure the longevity
-                of users' current scores and login sessions which are stored in the users' local storage for future use.
+                of users&apos; current scores and login sessions which are stored in the users&apos; local storage for future use.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">

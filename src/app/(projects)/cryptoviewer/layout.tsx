@@ -28,7 +28,7 @@ export default function chattingbusiness({
           <div className="lg:pr-4">
             <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
-                Crypto Viewer's beautiful frontend is made with <strong>EJS, CSS, Bootstrap CSS, and vanilla JavaScript</strong>. The large dataset is queried from Coin Market Cap's API
+                Crypto Viewer&apos;s beautiful frontend is made with <strong>EJS, CSS, Bootstrap CSS, and vanilla JavaScript</strong>. The large dataset is queried from Coin Market Cap&apos;s API
                 from the server. The clientside is then sent specific data snippets using <strong>RESTful APIs</strong> on the serverside created with <strong>NodeJS and ExpressJs</strong>. 
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
