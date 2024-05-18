@@ -1,15 +1,16 @@
-import { DevicePhoneMobileIcon, LanguageIcon } from '@heroicons/react/20/solid'
+import { DevicePhoneMobileIcon, LanguageIcon, CheckBadgeIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 const features = [
   {
     name: 'Languages.',
     description:
-      'HTML, CSS, Javascript, Java, SQL, Python, C++, Motoko, Typescript',
+      'HTML, CSS, JavaScript, Typescript, Python, SQL, Motoko',
     icon: LanguageIcon,
   },
   {
     name: 'Tools & Technologies.',
-    description: 'Node, Express, PostgreSQL, MongoDB, React.js, Next.js, Git, Tailwind.css, Bootstrap.css',
+    description: 'Tailwind, Bootstrap, Node, Express, PostgreSQL, MongoDB, DynamoDB, React, Next, Amazon Web Services (AWS), Git/Github',
     icon: DevicePhoneMobileIcon,
   },
 ]
@@ -40,7 +41,8 @@ export default function Henry() {
               </dl>
             </div>
           </div>
-          <div className="lg:pt-4 grid place-content-center">
+          <div className="lg:pt-4 grid grid-cols-1 grid-rows-1 place-content-center">
+            <Image src="/aws-certified-cloud-practitioner.png" height={110} width={110} alt="AWS Badge" className="absolute xl:mt-20 xl:mr-4 xl:top-1"/>
             <img
               src="/myself.jpg"
               alt="Me"
