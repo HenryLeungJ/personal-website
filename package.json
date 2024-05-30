@@ -19,6 +19,7 @@
     "@mui/material": "^5.15.12",
     "@mui/material-nextjs": "^5.15.11",
     "@mui/styled-engine-sc": "^6.0.0-alpha.17",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "bootstrap": "^5.3.3",

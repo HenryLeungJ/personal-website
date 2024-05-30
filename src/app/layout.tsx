@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Header from "@/components/header"
+import Header from "@/components/headeralt"
 import "./globals.css";
 
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body>
+      <body className="w-screen h-screen overflow-hidden">
         <Header />
         {children}
         </body>
