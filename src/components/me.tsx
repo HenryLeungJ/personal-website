@@ -5,12 +5,12 @@ const features = [
   {
     name: 'Languages.',
     description:
-      'HTML, CSS, JavaScript, Typescript, Python, SQL, Motoko',
+      'HTML, CSS, JavaScript, Typescript, Python, R, SQL, Motoko',
     icon: LanguageIcon,
   },
   {
     name: 'Tools & Technologies.',
-    description: 'Tailwind, Bootstrap, Node, Express, PostgreSQL, MongoDB, DynamoDB, React, Next, Amazon Web Services (AWS), Git/Github',
+    description: 'Tailwind, Bootstrap, Node, Express, PostgreSQL, MongoDB, DynamoDB, React, Next, Amazon Web Services (AWS), Git/Github, Visual Studio Code, PyCharm, RStudio',
     icon: DevicePhoneMobileIcon,
   },
 ]
