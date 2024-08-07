@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { Fragment, useState } from 'react'
-import Link from 'next/link';
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { Fragment, useState } from "react";
+import Link from "next/link";
+import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   XMarkIcon,
@@ -10,29 +10,63 @@ import {
   BuildingOfficeIcon,
   VideoCameraIcon,
   PlayIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+} from "@heroicons/react/24/outline";
+import { ChevronDownIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
 
-const products = [ //add new projects here
-  { name: 'Snaptext', description: `Send messages with a snap`, href: '/snaptext', icon: PlayIcon },
-  { name: 'Chatting Business', description: `Schedule real-time video calls with your collegues`, href: '/chattingbusiness', icon: VideoCameraIcon },
-  { name: 'Company Guesser', description: `Test your knowledge on the S&P 500's top companies`, href: '/companyguesser', icon: BuildingOfficeIcon },
-  { name: 'Crypto Viewer', description: `Take a look at your favourite cryptocurrenys' real-time price`, href: '/cryptoviewer', icon: CurrencyDollarIcon },
-]
+const products = [
+  //add new projects here
+  {
+    name: "Futures Dex",
+    description: `Visualize data on cryptocurrencies and predict with our linear regression model`,
+    href: "/cryptoviewer",
+    icon: CurrencyDollarIcon,
+  },
+  {
+    name: "Snaptext",
+    description: `Send messages with a snap`,
+    href: "/snaptext",
+    icon: PlayIcon,
+  },
+  {
+    name: "Chatting Business",
+    description: `Schedule real-time video calls with your collegues`,
+    href: "/chattingbusiness",
+    icon: VideoCameraIcon,
+  },
+  {
+    name: "Company Guesser",
+    description: `Test your knowledge on the S&P 500's top companies`,
+    href: "/companyguesser",
+    icon: BuildingOfficeIcon,
+  },
+  {
+    name: "Crypto Viewer",
+    description: `Take a look at your favourite cryptocurrenys' real-time price`,
+    href: "/cryptoviewer",
+    icon: CurrencyDollarIcon,
+  },
+];
 const callsToAction = [
-  { name: 'Github', href: 'https://github.com/HenryLeungJ', icon: PlayCircleIcon },
-]
+  {
+    name: "Github",
+    href: "https://github.com/HenryLeungJ",
+    icon: PlayCircleIcon,
+  },
+];
 
 function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white flex justify-center">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -44,16 +78,25 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link
+            href="/"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Home
           </Link>
-          <Link href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link
+            href="/contact"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
             Contact
           </Link>
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
               Projects
-              <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+              <ChevronDownIcon
+                className="h-5 w-5 flex-none text-gray-400"
+                aria-hidden="true"
+              />
             </Popover.Button>
 
             <Transition
@@ -73,10 +116,16 @@ export default function Header() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                        <item.icon
+                          className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                          aria-hidden="true"
+                        />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <a
+                          href={item.href}
+                          className="block font-semibold text-gray-900"
+                        >
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
@@ -92,7 +141,10 @@ export default function Header() {
                       href={item.href}
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                     >
-                      <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                      <item.icon
+                        className="h-5 w-5 flex-none text-gray-400"
+                        aria-hidden="true"
+                      />
                       {item.name}
                     </a>
                   ))}
@@ -100,11 +152,14 @@ export default function Header() {
               </Popover.Panel>
             </Transition>
           </Popover>
-
-          
         </Popover.Group>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog
+        as="div"
+        className="lg:hidden"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -129,7 +184,10 @@ export default function Header() {
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                         Projects
                         <ChevronDownIcon
-                          className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
+                          className={classNames(
+                            open ? "rotate-180" : "",
+                            "h-5 w-5 flex-none"
+                          )}
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
@@ -166,5 +224,5 @@ export default function Header() {
         </Dialog.Panel>
       </Dialog>
     </header>
-  )
+  );
 }
