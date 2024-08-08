@@ -33,13 +33,13 @@ export default function Henry() {
           <div className="lg:pt-4 grid place-content-center lg:place-content-start">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                Software Engineer
+                Software Engineer & Data Scientist
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Henry Leung
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                A <b>software engineer</b>.<br />
+                A <b>Software Engineer</b> and <b>Data Scientist</b>.<br />
                 Combined Major in <b>Business and Computer Science</b> at the{" "}
                 <b>University of British Columbia</b>.<br />
                 Always open to new experiences and learning opportunities.
