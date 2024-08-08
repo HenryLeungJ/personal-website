@@ -2,6 +2,7 @@ import {
   CpuChipIcon,
   GlobeAmericasIcon,
   ChartBarSquareIcon,
+  CircleStackIcon,
 } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
@@ -14,14 +15,19 @@ const features = [
   {
     name: "Software Engineering Technologies.",
     description:
-      "Tailwind, Bootstrap, Node, Express, Flask, PostgreSQL, MongoDB, DynamoDB, SQLite, React, Next, Tkinter, Amazon Web Services (AWS), Git/Github, Visual Studio Code, PyCharm",
+      "Tailwind, Bootstrap, Node, Express, Flask, React, Next, Tkinter, Amazon Web Services (AWS), Visual Studio Code, PyCharm",
     icon: CpuChipIcon,
   },
   {
     name: "Data Science Technologies.",
     description:
-      "Beautiful Soup, Selenium, Pandas, Numpy, Matplotlib, Plotly, Seaborn, Scipy, Scikit-learn, Jupyter Notebook, Git/Github, RStudio",
+      "Beautiful Soup, Selenium, Pandas, Numpy, Matplotlib, Plotly, Seaborn, Scipy, Scikit-learn, Jupyter NotebookGit/Github, RStudio",
     icon: ChartBarSquareIcon,
+  },
+  {
+    name: "Databases & Others.",
+    description: "PostgreSQL, MongoDB, DynamoDB, SQLite, Git/Github",
+    icon: CircleStackIcon,
   },
 ];
 
