@@ -23,22 +23,22 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/futuresdex",
   },
   {
-    title: "SnapText",
+    title: "Snaptext",
     href: "/snaptext",
     description: "Send messages with a snap using SnapText",
   },
   {
-    title: "ChattingBusiness",
+    title: "Chatting Business",
     href: "/chattingbusiness",
     description: "Schedule real-time video calls with your collegues",
   },
   {
-    title: "companyguesser",
+    title: "Company Guesser",
     href: "/companyguesser",
     description: "Test your knowledge on the S&P 500's top companies",
   },
   {
-    title: "CryptoViewer",
+    title: "Crypto Viewer",
     href: "/cryptoviewer",
     description:
       "Take a look at your favourite cryptocurrenys' real-time price",

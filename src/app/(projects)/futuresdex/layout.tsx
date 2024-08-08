@@ -37,14 +37,14 @@ export default function chattingbusiness({
                 Futures Dex Charts and Futures Dex Regression requests{" "}
                 <strong>graphical data</strong> from our{" "}
                 <strong>RESTful Flask API</strong>. This graphical data is made
-                by aggregating and manipulating data from CoinCompare's API with{" "}
-                <strong>Pandas</strong>, then utilizing this data as input for{" "}
-                <strong>Seaborn and Matplotlib</strong>. Futures Dex Regression
-                also requires predictions which is generated using historical
-                data as training and testing data for{" "}
+                by aggregating and manipulating data from CoinCompare&apos;s API
+                with <strong>Pandas</strong>, then utilizing this data as input
+                for <strong>Seaborn and Matplotlib</strong>. Futures Dex
+                Regression also requires predictions which is generated using
+                historical data as training and testing data for{" "}
                 <strong>Scikit-Learn</strong> . Futures Dex Futures utilizes
                 <strong>Recharts</strong> instead of our Flask Api to add
-                interactability and animations while utilizing Binance's
+                interactability and animations while utilizing Binance&apos;s
                 Developer API for relaiable, historical data.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
