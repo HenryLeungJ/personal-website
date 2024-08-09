@@ -15,7 +15,7 @@ const features = [
   {
     name: "Software Engineering Technologies.",
     description:
-      "Tailwind, Bootstrap, Node, Express, Flask, React, Next, Tkinter, Amazon Web Services (AWS), Visual Studio Code, PyCharm",
+      "Tailwind, Bootstrap, jQuery, Node, Express, Flask, React, TanStack Query, Next, Tkinter, Amazon Web Services (AWS), Visual Studio Code, PyCharm",
     icon: CpuChipIcon,
   },
   {
