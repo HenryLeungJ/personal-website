@@ -21,7 +21,7 @@ const features = [
   {
     name: "Data Science Technologies.",
     description:
-      "Beautiful Soup, Selenium, Pandas, Numpy, Matplotlib, Plotly, Seaborn, Scipy, Scikit-learn, Jupyter NotebookGit/Github, RStudio",
+      "Beautiful Soup, Selenium, Pandas, NumPy, Matplotlib, Plotly, Seaborn, Scipy, Scikit-learn, Jupyter NotebookGit/Github, RStudio",
     icon: ChartBarSquareIcon,
   },
   {
