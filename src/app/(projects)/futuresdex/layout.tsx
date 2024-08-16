@@ -42,7 +42,7 @@ export default function chattingbusiness({
                 for <strong>Seaborn and Matplotlib</strong>. Futures Dex
                 Regression also requires predictions which is generated using
                 historical data as training and testing data for{" "}
-                <strong>Scikit-Learn</strong> . Futures Dex Futures utilizes
+                <strong>Scikit-Learn</strong> . Futures Dex Futures utilizes{" "}
                 <strong>Recharts</strong> instead of our Flask Api to add
                 interactability and animations while utilizing Binance&apos;s
                 Developer API for relaiable, historical data.
