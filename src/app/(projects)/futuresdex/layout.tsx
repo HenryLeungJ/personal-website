@@ -57,8 +57,8 @@ export default function chattingbusiness({
                     <strong className="font-semibold text-gray-900">
                       Technologies.
                     </strong>{" "}
-                    Typescript, ReactJS, NextJS, Tailwind CSS, Flask, Pandas,
-                    Seaborn, Matplotlib, Scikit-Learn
+                    Typescript, ReactJS, NextJS, TanStack Query, Tailwind CSS,
+                    Flask, Pandas, Seaborn, Matplotlib, Scikit-Learn
                   </span>
                 </li>
               </ul>
