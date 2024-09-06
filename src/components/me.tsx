@@ -3,31 +3,34 @@ import {
   GlobeAmericasIcon,
   ChartBarSquareIcon,
   CircleStackIcon,
+  WrenchIcon,
 } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 const features = [
   {
     name: "Languages.",
-    description: "HTML, CSS, JavaScript, Typescript, Python, R, SQL, Motoko",
+    description:
+      "HTML, CSS, JavaScript, Typescript, Java, Python, R, SQL, Motoko",
     icon: GlobeAmericasIcon,
   },
   {
     name: "Software Engineering Technologies.",
     description:
-      "Figma, Tailwind, Bootstrap, jQuery, Node, Express, Flask, React, TanStack Query, Next, Tkinter, Amazon Web Services (AWS), Visual Studio Code, PyCharm",
+      "Tailwind, Bootstrap, jQuery, Node.js, Express.js, Flask, React.js, TanStack Query, Next.js, Tkinter, Amazon Web Services (AWS)",
     icon: CpuChipIcon,
   },
   {
     name: "Data Science Technologies.",
     description:
-      "Beautiful Soup, Selenium, Pandas, NumPy, Matplotlib, Plotly, Seaborn, Scipy, Scikit-learn, Jupyter Notebook, Git/Github, RStudio",
+      "Beautiful Soup, Selenium, Pandas, NumPy, Matplotlib, Plotly, Seaborn, Scipy, Scikit-learn",
     icon: ChartBarSquareIcon,
   },
   {
-    name: "Databases & Others.",
-    description: "PostgreSQL, MongoDB, DynamoDB, SQLite, Git/Github",
-    icon: CircleStackIcon,
+    name: "Developer Tools & Databases.",
+    description:
+      "Git/Github, Visual Studio Code, PyCharm, Jupyter Notebook, RStudio, Figma, PostgreSQL, MongoDB, MySQL, DynamoDB, SQLite",
+    icon: WrenchIcon,
   },
 ];
 
