@@ -42,7 +42,7 @@ export default function Henry() {
           <div className="lg:pt-4 grid place-content-center lg:place-content-start">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-indigo-600">
-                Software Engineer & Data Scientist
+                Software Engineer
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 Henry Leung

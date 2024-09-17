@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Header from "@/components/headeralt"
+import Header from "@/components/headeralt";
 import "./globals.css";
-
 
 export const metadata: Metadata = {
   title: "Henry Leung",
@@ -18,10 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      <body className="w-screen h-screen overflow-hidden">
+      <body className="w-screen h-screen xl:overflow-hidden">
         <Header />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
