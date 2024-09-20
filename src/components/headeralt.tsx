@@ -47,7 +47,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function NavigationMenuDemo() {
   return (
-    <div className="w-full flex justify-center mt-4">
+    <div className="w-full flex justify-center pt-4">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -77,7 +77,7 @@ export default function NavigationMenuDemo() {
                   </NavigationMenuLink>
                 </li>
                 <ListItem
-                  href="https://www.linkedin.com/in/henry-leung-j/"
+                  href="https://www.linkedin.com/in/henryleungj/"
                   className="flex justify-center h-20"
                 >
                   <Image

@@ -8,7 +8,7 @@ export default function chattingbusiness({
   carousel: React.ReactNode;
 }) {
   return (
-    <div className="relative isolate overflow-hidden bg-white px-6 py-14 lg:overflow-visible lg:px-0">
+    <div className="flex justify-center items-center isolate overflow-hidden bg-white px-6 py-5 lg:overflow-visible lg:px-4 h-[80%]">
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-0">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
@@ -16,10 +16,10 @@ export default function chattingbusiness({
               <p className="text-base font-semibold leading-7 text-indigo-600">
                 Visualize Data and Predict Trends
               </p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900">
                 Futures Dex
               </h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700 mb-5">
+              <p className="mt-3 text-md xl:text-lg mb-3 leading-8 text-gray-700">
                 A one-stop cryptocurrency statistics visualization and optimized
                 prediction platform
               </p>
@@ -31,7 +31,7 @@ export default function chattingbusiness({
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+            <div className="max-w-xl text-sm xl:text-base leading-7 text-gray-700 lg:max-w-lg">
               <p>
                 Futures Dex has three features: Charts, Futures, and Regression.
                 Futures Dex Charts and Futures Dex Regression requests{" "}
@@ -45,7 +45,7 @@ export default function chattingbusiness({
                 <strong>Scikit-Learn</strong> . Futures Dex Futures utilizes{" "}
                 <strong>Recharts</strong> instead of our Flask Api to add
                 interactability and animations while utilizing Binance&apos;s
-                Developer API for relaiable, historical data.
+                Developer API for reliable, historical data.
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
@@ -54,7 +54,7 @@ export default function chattingbusiness({
                     aria-hidden="true"
                   />
                   <span>
-                    <strong className="font-semibold text-gray-900">
+                    <strong className="font-semibold text-gray-900 text-base">
                       Technologies.
                     </strong>{" "}
                     Typescript, ReactJS, NextJS, TanStack Query, Tailwind CSS,
