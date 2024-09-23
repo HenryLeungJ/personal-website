@@ -41,18 +41,17 @@ export default function Henry() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pt-4 grid place-content-center lg:place-content-start`">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-[2.5vh] xl:text-[1.8vh] text-indigo-600">
+              <h2 className="text-base font-semibold leading-7 text-[2.5vh] text-indigo-600">
                 Software Engineer
               </h2>
               <p className="mt-2 xl:mt-2 text-[5vh] xl:text-4xl font-bold tracking-tight text-gray-900">
                 Henry Leung
               </p>
-              <p className="mt-3 xl:mt-6 text-[2.5vh] xl:text-lg leading-8 text-gray-600">
-                A <b>Software Engineer</b>.<br />
-                Combined Major in <b>Business and Computer Science</b> at the{" "}
-                <b>University of British Columbia</b>.<br />
+              <p className="mt-3 xl:mt-6 text-[100%] leading-8 text-gray-600">
+                Combined Major in <b>Business and Computer Science</b> student
+                at the <b>University of British Columbia</b>.<br />
               </p>
-              <dl className="mt-3 xl:mt-10 max-w-xl space-y-3 lg:space-y-4 xl:space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <dl className="mt-3 xl:mt-6 max-w-xl space-y-3 lg:space-y-4 xl:space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
@@ -60,9 +59,9 @@ export default function Henry() {
                         className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
                         aria-hidden="true"
                       />
-                      <span className="text-[2vh]">{feature.name}</span>
+                      <span className="text-[100%]">{feature.name}</span>
                     </dt>{" "}
-                    <dd className="inline text-[2vh] xl:text-base">
+                    <dd className="inline text-[100%] xl:text-base">
                       {feature.description}
                     </dd>
                   </div>
