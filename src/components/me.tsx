@@ -11,25 +11,25 @@ const features = [
   {
     name: "Languages.",
     description:
-      "HTML, CSS, JavaScript, Typescript, Java, Python, R, SQL, Motoko",
+      "Python, Java, SQL, JavaScript, TypeScript, C++, HTML/CSS, R, Motoko",
     icon: GlobeAmericasIcon,
   },
   {
-    name: "Software Engineering Technologies.",
+    name: "Frameworks.",
     description:
-      "Tailwind, Bootstrap, jQuery, Node.js, Express.js, Flask, React.js, TanStack Query, Next.js, Tkinter, Amazon Web Services",
+      "React.js, Next.js, Node.js, Express.js, Flask, Bootstrap, Tailwind, Material-UI, jQuery",
     icon: CpuChipIcon,
   },
   {
-    name: "Data Science Technologies.",
+    name: "Developer Tools.",
     description:
-      "Beautiful Soup, Selenium, Pandas, NumPy, Matplotlib, Plotly, Seaborn, Scipy, Scikit-learn",
+      "Git, Unix Shell, Figma, Amazon Web Services, VS Code, PyCharm, Jupyter, RStudio, PostgreSQL, MySQL, SQLite, MongoDB, DynamoDB",
     icon: ChartBarSquareIcon,
   },
   {
-    name: "Developer Tools & Databases.",
+    name: "Libraries.",
     description:
-      "Git/Github, Visual Studio Code, PyCharm, Jupyter Notebook, RStudio, Figma, PostgreSQL, MongoDB, MySQL, DynamoDB, SQLite",
+      "Socket.IO, Pandas, NumPy, Matplotlib, SciPy, Seaborn, TanStack Query, Scikit-learn, Selenium, JUnit",
     icon: WrenchIcon,
   },
 ];
