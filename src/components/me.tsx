@@ -36,7 +36,7 @@ const features = [
 
 export default function Henry() {
   return (
-    <div className="bg-white py-2 xl:py-8 h-[80%]">
+    <div className="bg-white py-2 xl:py-8 h-screen fade_in">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pt-4 grid place-content-center lg:place-content-start`">
@@ -48,7 +48,7 @@ export default function Henry() {
                 Henry Leung
               </p>
               <p className="mt-3 xl:mt-6 text-[100%] leading-8 text-gray-600">
-                Combined Major in <b>Business and Computer Science</b> student
+                Combined Major in <b>Computer Science and Business</b> student
                 at the <b>University of British Columbia</b>.<br />
               </p>
               <dl className="mt-3 xl:mt-6 max-w-xl space-y-3 lg:space-y-4 xl:space-y-5 text-base leading-7 text-gray-600 lg:max-w-none">
@@ -69,7 +69,7 @@ export default function Henry() {
               </dl>
             </div>
           </div>
-          <div className="lg:pt-4 grid grid-cols-1 grid-rows-1 justify-items-center">
+          <div className="lg:pt-4 grid grid-cols-1 grid-rows-1 justify-items-center fade_in">
             <div>
               <Image
                 src="/aws-certified-cloud-practitioner.png"
