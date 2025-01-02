@@ -7,31 +7,30 @@ import {
   FaLightbulb,
   FaRocket,
 } from "react-icons/fa";
+import Image from "next/image";
 
 const timelineData = [
-  {
-    id: 1,
-    side: 0,
-    date: "2023",
-    title: "$20 000 Centennial Scholarship",
-    icon: FaAward,
-    color: "bg-yellow-500",
-  },
   {
     id: 2,
     side: 0,
     date: "2023",
-    title: "Started University",
+    title: "University of British Columbia",
     icon: FaGraduationCap,
     color: "bg-blue-500",
+    img: "/experiences/UBC_LOGO.png",
+    description:
+      "I was honored to be admitted to the University of British Columbia as a Combined Major in Computer Science and Business student, receiving a $20,000 scholarship. The opportunity to blend my entrepreneurial ambitions with my passion for computer science at Canada's top-ranked business school was an exceptional chance I was determined to pursue.",
   },
   {
     id: 3,
     side: 1,
     date: "2024",
-    title: "Internship at Atomic",
+    title: "Atomic",
     icon: FaBriefcase,
     color: "bg-purple-500",
+    img: "/experiences/Atomic.jpg",
+    description:
+      "My first internship was at Atomic, a no-code platform designed to empower everyday users to create full-stack web applications with ease. As a Software Developer Intern, I applied my expertise in JavaScript, SQL, Node.js, React.js, and AWS to tackle complex challenges and deliver innovative features.",
   },
   {
     id: 4,
@@ -40,14 +39,20 @@ const timelineData = [
     title: "UBC BUCS Team",
     icon: FaLightbulb,
     color: "bg-green-500",
+    img: "/experiences/BUCS.jpg",
+    description:
+      "I joined the BUCS team as a Software Engineer, where my contributions impact over 400 students. This opportunity allows me to combine my passion for hosting career-focused social events with developing technology that streamlines students' career growth and opportunities.",
   },
   {
     id: 5,
     side: 1,
     date: "2025",
-    title: "Internship at HP",
+    title: "HP (Hewlett-Packard)",
     icon: FaBriefcase,
     color: "bg-purple-500",
+    img: "/experiences/HP.png",
+    description:
+      "I am thrilled to be joining the HP team as a Fullstack Application Developer Intern. I look forward to the opportunities and challenges ahead!",
   },
 ];
 
@@ -100,7 +105,7 @@ const Timeline = () => {
       <div className="relative wrap overflow-hidden p-10 h-full">
         <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
         {timelineData.map((milestone, index) => (
-          <RevealOnScroll>
+          <RevealOnScroll key={index}>
             <div
               key={milestone.id}
               className={`mb-8 flex justify-between items-center w-full ${
@@ -109,23 +114,30 @@ const Timeline = () => {
             >
               <div className="order-1 w-5/12"></div>
               <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full min-w-fit p-2">
-                <h1 className="mx-auto font-semibold text-lg text-white">
+                <h1 className="mx-auto font-semibold text-lg text-white mr-2">
                   {milestone.date}
                 </h1>
+                <milestone.icon className="text-xl text-white inline-block" />
               </div>
               <button
+                style={{
+                  background: "url(" + milestone.img + ")",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center center",
+                }}
                 onClick={() => handleMilestoneClick(milestone)}
-                className={`order-1 w-5/12 px-6 py-4 rounded-lg shadow-xl ${
+                className={`order-1 h-[9rem] w-5/12 px-6 py-4 rounded-lg shadow-xl ${
                   milestone.color
-                } text-white cursor-pointer transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-${
+                } text-black cursor-pointer transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-${
                   milestone.color.split("-")[1]
                 }-400`}
               >
-                <h3 className="mb-3 font-bold text-xl">{milestone.title}</h3>
-                <milestone.icon className="text-4xl mb-3 inline-block" />
+                {/* <h3 className="mb-3 font-bold text-xl">{milestone.title}</h3> */}
+                {/* <milestone.icon className="text-4xl mb-3 inline-block" />
                 <p className="text-sm leading-snug tracking-wide text-opacity-100">
                   Click for more details
-                </p>
+                </p> */}
               </button>
             </div>
           </RevealOnScroll>
@@ -153,10 +165,7 @@ const Timeline = () => {
               </h3>
               <div className="mt-2 px-7 py-3">
                 <p className="text-sm text-gray-500">
-                  Detailed information about{" "}
-                  {selectedMilestone.title.toLowerCase()} milestone. This
-                  section can include more specific details, achievements, or
-                  reflections related to this particular point in your career.
+                  {selectedMilestone.description}
                 </p>
               </div>
               <div className="items-center px-4 py-3">
