@@ -1,25 +1,52 @@
 "use client";
+
 import React, { useEffect, useRef, useState } from "react";
-import {
-  FaGraduationCap,
-  FaBriefcase,
-  FaAward,
-  FaLightbulb,
-  FaRocket,
-} from "react-icons/fa";
-import Image from "next/image";
+import { FaGraduationCap, FaBriefcase, FaLightbulb } from "react-icons/fa";
+import RevealOnScroll from "./revealOnScroll";
+
+interface Milestone {
+  icon: React.ElementType; // This assumes icon is a React component
+  color: string;
+  title: string;
+  description: string;
+}
 
 const timelineData = [
   {
-    id: 2,
+    id: 1,
     side: 0,
     date: "2023",
     title: "University of British Columbia",
     icon: FaGraduationCap,
     color: "bg-blue-500",
     img: "/experiences/UBC_LOGO.png",
-    description:
-      "I was honored to be admitted to the University of British Columbia as a Combined Major in Computer Science and Business student, receiving a $20,000 scholarship. The opportunity to blend my entrepreneurial ambitions with my passion for computer science at Canada's top-ranked business school was an exceptional chance I was determined to pursue.",
+    description: (
+      <p>
+        I was honored to be admitted to the{" "}
+        <strong>University of British Columbia</strong> as a Combined Major in{" "}
+        <strong>Computer Science</strong> and Business student, receiving a{" "}
+        <strong>$20,000</strong> scholarship. The opportunity to blend my
+        entrepreneurial ambitions with my passion for computer science at
+        Canada's <strong>top-ranked</strong> business school was an exceptional
+        chance I was determined to pursue.
+      </p>
+    ),
+  },
+  {
+    id: 2,
+    side: 0,
+    date: "2023",
+    title: "AWS",
+    icon: FaGraduationCap,
+    color: "bg-blue-500",
+    img: "/experiences/AWS.png",
+    description: (
+      <p>
+        I obtained my AWS Cloud Practitioner Certification. I learned core
+        technologies and concepts such as Lambda, EC2, SageMaker, DynamoDB and
+        more!
+      </p>
+    ),
   },
   {
     id: 3,
@@ -29,8 +56,15 @@ const timelineData = [
     icon: FaBriefcase,
     color: "bg-purple-500",
     img: "/experiences/Atomic.jpg",
-    description:
-      "My first internship was at Atomic, a no-code platform designed to empower everyday users to create full-stack web applications with ease. As a Software Developer Intern, I applied my expertise in JavaScript, SQL, Node.js, React.js, and AWS to tackle complex challenges and deliver innovative features.",
+    description: (
+      <p>
+        My first internship was at Atomic, a no-code platform designed to
+        empower everyday users to create full-stack web applications with ease.
+        As a Software Developer Intern, I applied my expertise in JavaScript,
+        SQL, Node.js, React.js, and AWS to tackle complex challenges and deliver
+        innovative features.
+      </p>
+    ),
   },
   {
     id: 4,
@@ -40,8 +74,14 @@ const timelineData = [
     icon: FaLightbulb,
     color: "bg-green-500",
     img: "/experiences/BUCS.jpg",
-    description:
-      "I joined the BUCS team as a Software Engineer, where my contributions impact over 400 students. This opportunity allows me to combine my passion for hosting career-focused social events with developing technology that streamlines students' career growth and opportunities.",
+    description: (
+      <p>
+        I joined the BUCS team as a Software Engineer, where my contributions
+        impact over 400 students. This opportunity allows me to combine my
+        passion for hosting career-focused social events with developing
+        technology that streamlines students' career growth and opportunities.
+      </p>
+    ),
   },
   {
     id: 5,
@@ -51,43 +91,20 @@ const timelineData = [
     icon: FaBriefcase,
     color: "bg-purple-500",
     img: "/experiences/HP.png",
-    description:
-      "I am thrilled to be joining the HP team as a Fullstack Application Developer Intern. I look forward to the opportunities and challenges ahead!",
+    description: (
+      <p>
+        I am thrilled to be joining the HP team as a Fullstack Application
+        Developer Intern. I look forward to the opportunities and challenges
+        ahead!
+      </p>
+    ),
   },
 ];
 
-const RevealOnScroll = ({ children }: { children: React.ReactNode }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const onWindScroll = () => {
-      const element = ref.current;
-      if (element) {
-        const { top } = element.getBoundingClientRect();
-        const isVisible = top < window.innerHeight;
-        setIsVisible(isVisible);
-      }
-    };
-
-    window.addEventListener("scroll", onWindScroll);
-    return () => {
-      window.removeEventListener("scroll", onWindScroll);
-    };
-  }, []);
-
-  const classes = `transition duration-1000
-      ${isVisible ? "fade_after" : "fade_before"}`;
-
-  return (
-    <div ref={ref} className={classes}>
-      {children}
-    </div>
-  );
-};
-
 const Timeline = () => {
-  const [selectedMilestone, setSelectedMilestone] = useState(null);
+  const [selectedMilestone, setSelectedMilestone] = useState<Milestone | null>(
+    null
+  );
 
   const handleMilestoneClick = (milestone: any) => {
     setSelectedMilestone(milestone);
@@ -132,13 +149,7 @@ const Timeline = () => {
                 } text-black cursor-pointer transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-${
                   milestone.color.split("-")[1]
                 }-400`}
-              >
-                {/* <h3 className="mb-3 font-bold text-xl">{milestone.title}</h3> */}
-                {/* <milestone.icon className="text-4xl mb-3 inline-block" />
-                <p className="text-sm leading-snug tracking-wide text-opacity-100">
-                  Click for more details
-                </p> */}
-              </button>
+              />
             </div>
           </RevealOnScroll>
         ))}
@@ -150,7 +161,7 @@ const Timeline = () => {
           onClick={closeModal}
         >
           <div
-            className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white"
+            className="relative top-[15rem] mx-auto p-5 border w-[50rem] shadow-lg rounded-md bg-white"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mt-3 text-center">
