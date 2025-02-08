@@ -1,6 +1,15 @@
+"use client";
 import React from "react";
 
-const project = ({ imagePath, id }: { imagePath: string; id: number }) => {
+const project = ({
+  imagePath,
+  id,
+  onClick,
+}: {
+  imagePath: string;
+  id: number;
+  onClick: () => void;
+}) => {
   return (
     <button
       style={{
@@ -9,6 +18,7 @@ const project = ({ imagePath, id }: { imagePath: string; id: number }) => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
       }}
+      onClick={onClick}
       //   onClick={() => handleMilestoneClick(milestone)}
       className={`order-1 h-[15rem] w-[25rem] py-4 ${
         id < 3 ? "col-span-2" : "col-span-3"

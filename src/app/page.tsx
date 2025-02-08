@@ -4,7 +4,7 @@ import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <div className="w-[100%]">
+    <div className="w-[100%] flex flex-col gap-[7rem]">
       <Me />
       <Experience />
       <Projects />

@@ -36,7 +36,7 @@ const features = [
 
 export default function Henry() {
   return (
-    <div className="bg-white py-2 xl:py-8 h-screen fade_in">
+    <div className="bg-white py-2 xl:py-8 h-[48rem] fade_in flex flex-col justify-center mb-10">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pt-4 grid place-content-center lg:place-content-start`">
@@ -76,13 +76,13 @@ export default function Henry() {
                 height={110}
                 width={110}
                 alt="AWS Badge"
-                className="absolute xl:mt-20 xl:mr-4 xl:top-1"
-                style={{ width: "6%", height: "auto" }}
+                className="absolute xl:mt-[8rem] xl:mr-4 xl:top-1"
+                style={{ width: "7rem", height: "auto" }}
               />
               <img
                 src="/myself.jpg"
                 alt="Me"
-                className="w-[50vh] max-w-lg rounded-xl shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 object-cover"
+                className="w-[30rem] md:h-[20rem] lg:h-[35rem] max-w-lg rounded-xl shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 object-cover"
               />
             </div>
           </div>
