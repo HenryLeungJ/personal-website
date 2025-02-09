@@ -27,8 +27,8 @@ const timelineData = [
         <strong>Computer Science</strong> and Business student, receiving a{" "}
         <strong>$20,000</strong> scholarship. The opportunity to blend my
         entrepreneurial ambitions with my passion for computer science at
-        Canada's <strong>top-ranked</strong> business school was an exceptional
-        chance I was determined to pursue.
+        Canada&apos;s <strong>top-ranked</strong> business school was an
+        exceptional chance I was determined to pursue.
       </p>
     ),
   },
@@ -79,7 +79,8 @@ const timelineData = [
         I joined the BUCS team as a Software Engineer, where my contributions
         impact over 400 students. This opportunity allows me to combine my
         passion for hosting career-focused social events with developing
-        technology that streamlines students' career growth and opportunities.
+        technology that streamlines students&apos; career growth and
+        opportunities.
       </p>
     ),
   },

@@ -8,8 +8,8 @@ export default function chattingbusiness({
   carousel: React.ReactNode;
 }) {
   return (
-    <div className="flex justify-center items-center isolate overflow-hidden bg-white px-6 py-5 lg:overflow-visible lg:px-4 h-[80%]">
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-0">
+    <div className="flex justify-center items-center isolate bg-white px-6 py-5 lg:overflow-visible lg:px-4 h-[50rem]">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-0 h-[70%]">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
             <div className="lg:max-w-lg pt-10">
