@@ -63,7 +63,7 @@ const EmblaCarousel = () => {
       </div>
       <div className="flex justify-center mt-2">
         <Button variant="destructive" asChild>
-          <Link href="http://localhost:3000/companyguesser">
+          <Link href="https://henryleungj.com/companyguesser">
             Not In Service
           </Link>
         </Button>
