@@ -62,8 +62,10 @@ const EmblaCarousel = () => {
         </div>
       </div>
       <div className="flex justify-center mt-2">
-        <Button variant="outline" disabled={true} asChild>
-          <Link href="https://company-guesser.vercel.app/">Go To Website</Link>
+        <Button variant="destructive" asChild>
+          <Link href="http://localhost:3000/companyguesser">
+            Not In Service
+          </Link>
         </Button>
       </div>
     </section>
