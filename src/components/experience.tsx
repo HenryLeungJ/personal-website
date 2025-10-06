@@ -22,13 +22,10 @@ const timelineData = [
     img: "/experiences/UBC_LOGO.png",
     description: (
       <p>
-        I was honored to be admitted to the{" "}
+        In the Fall of 2023, I was honored to be admitted to the{" "}
         <strong>University of British Columbia</strong> as a Combined Major in{" "}
         <strong>Computer Science</strong> and Business student, receiving a{" "}
-        <strong>$20,000</strong> scholarship. The opportunity to blend my
-        entrepreneurial ambitions with my passion for computer science at
-        Canada&apos;s <strong>top-ranked</strong> business school was an
-        exceptional chance I was determined to pursue.
+        <strong>$20,000</strong> scholarship.
       </p>
     ),
   },
@@ -42,9 +39,7 @@ const timelineData = [
     img: "/experiences/AWS.png",
     description: (
       <p>
-        I obtained my AWS Cloud Practitioner Certification. I learned core
-        technologies and concepts such as Lambda, EC2, SageMaker, DynamoDB and
-        more!
+        In the Fall of 2023, I obtained my AWS Cloud Practitioner Certification.
       </p>
     ),
   },
@@ -58,11 +53,9 @@ const timelineData = [
     img: "/experiences/Atomic.jpg",
     description: (
       <p>
-        My first internship was at Atomic, a no-code platform designed to
-        empower everyday users to create full-stack web applications with ease.
-        As a Software Developer Intern, I applied my expertise in JavaScript,
-        SQL, Node.js, React.js, and AWS to tackle complex challenges and deliver
-        innovative features.
+        In the Summer of 2024, I joined Atomic as a Softare Developer Intern. In
+        this opportunity, I was able to collaborate with world class engineers
+        to create a distributed no-code platform.
       </p>
     ),
   },
@@ -71,16 +64,13 @@ const timelineData = [
     side: 0,
     date: "2024",
     title: "UBC BUCS Team",
-    icon: FaLightbulb,
     color: "bg-green-500",
     img: "/experiences/BUCS.jpg",
     description: (
       <p>
-        I joined the BUCS team as a Software Engineer, where my contributions
-        impact over 400 students. This opportunity allows me to combine my
-        passion for hosting career-focused social events with developing
-        technology that streamlines students&apos; career growth and
-        opportunities.
+        Throughout the 2024-2025 school year, I was the Software Engineer for
+        the BUCS Community team at UBC. In this experience, I was able to create
+        projects that impacted over 400 students in our student body.
       </p>
     ),
   },
@@ -89,14 +79,30 @@ const timelineData = [
     side: 1,
     date: "2025",
     title: "HP (Hewlett-Packard)",
-    icon: FaBriefcase,
     color: "bg-purple-500",
     img: "/experiences/HP.png",
     description: (
       <p>
-        I am thrilled to be joining the HP team as a Fullstack Application
-        Developer Intern. I look forward to the opportunities and challenges
-        ahead!
+        In the Spring of 2025, I joined HP as a Fullstack Application Developer
+        intern! We worked on the Trusted Thin Clients, super secure physical
+        endpoints to virtual machines!
+      </p>
+    ),
+  },
+  {
+    id: 7,
+    side: 1,
+    date: "2025",
+    title: "Tesla",
+    color: "bg-purple-500",
+    img: "/experiences/Tesla.jpg",
+    description: (
+      <p>
+        In the Summer of 2025, I joined Tesla as a Software Engineer Intern on
+        the Maps & Navigation team for Autopilot! In this opportunity, I was
+        able to build projects from scratch and lead it to completion, build
+        large algorithms ontop of billions of datapoints, and help improve the
+        safety and accuracy of Tesla Autopilot!
       </p>
     ),
   },
@@ -131,11 +137,10 @@ const Timeline = () => {
               }`}
             >
               <div className="order-1 w-5/12"></div>
-              <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full min-w-fit p-2">
-                <h1 className="mx-auto font-semibold text-lg text-white mr-2">
+              <div className="z-20 flex items-center justify-center order-1 bg-gray-800 shadow-xl w-16 h-10 rounded-full min-w-fit">
+                <span className="font-semibold text-base text-white text-center">
                   {milestone.date}
-                </h1>
-                <milestone.icon className="text-xl text-white inline-block" />
+                </span>
               </div>
               <button
                 style={{
@@ -158,36 +163,28 @@ const Timeline = () => {
 
       {selectedMilestone && (
         <div
-          className="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50"
+          className="fixed inset-0 bg-gray-700 bg-opacity-60 flex items-center justify-center z-50"
           onClick={closeModal}
         >
           <div
-            className="relative top-[15rem] mx-auto p-5 border w-[50rem] shadow-lg rounded-md bg-white"
+            className="relative mx-auto p-8 border w-full max-w-lg shadow-2xl rounded-xl bg-white"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="mt-3 text-center">
-              <selectedMilestone.icon
-                className={`mx-auto text-6xl ${selectedMilestone.color.replace(
-                  "bg-",
-                  "text-"
-                )}`}
-              />
-              <h3 className="text-lg leading-6 font-medium text-gray-900 mt-4">
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-2xl font-bold focus:outline-none"
+              aria-label="Close"
+            >
+              ×
+            </button>
+            <div className="text-center">
+              <h3 className="text-2xl font-semibold text-gray-900 mt-4">
                 {selectedMilestone.title}
               </h3>
-              <div className="mt-2 px-7 py-3">
-                <p className="text-sm text-gray-500">
+              <div className="mt-4 px-4 py-2">
+                <div className="text-base text-gray-700">
                   {selectedMilestone.description}
-                </p>
-              </div>
-              <div className="items-center px-4 py-3">
-                <button
-                  id="closeModal"
-                  onClick={closeModal}
-                  className="px-4 py-2 bg-gray-800 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500"
-                >
-                  Close
-                </button>
+                </div>
               </div>
             </div>
           </div>
